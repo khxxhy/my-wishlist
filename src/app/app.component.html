@@ -1,14 +1,13 @@
 <div class="container">
-  <div *ngIf="items.length === 0; else showItems">
+  <div *ngIf="items.length === 0; else showItems" class="text-gray-600">
     There are no wishes to display.
   </div>
 
   <ng-template #showItems>
-    <div *ngFor="let item of items" class="checkbox-container">
-      <label>
-        <input type="checkbox" />
-        <span class="checkmark"></span>
-        {{ item.wishText }}
+    <div *ngFor="let item of items" class="flex items-center space-x-3 p-2">
+      <label class="inline-flex items-center space-x-2">
+        <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded" />
+        <span class="text-gray-800">{{ item.wishText }}</span>
       </label>
     </div>
   </ng-template>
