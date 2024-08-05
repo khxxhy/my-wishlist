@@ -9,8 +9,13 @@ export class AppComponent {
   items : WishItem[]= [
     new WishItem('be happy'),
     new WishItem('communicate'),
-    new WishItem('love'),
-    new WishItem('learn angular', true)
+    new WishItem('love', true ),
+    new WishItem('learn angular')
   ];
   title = 'my-wishlist';
+
+  toggleItem(item: WishItem){
+    item.isComplete = !item.isComplete;
+    console.log(item)
+  }
 }
