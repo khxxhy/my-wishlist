@@ -1,5 +1,4 @@
 <div class="container mx-auto px-4">
-  <!-- Centered Search Form -->
   <div class="flex justify-center items-center min-h-[50vh]">
     <form class="flex items-center w-full max-w-lg">
       <input
@@ -16,7 +15,6 @@
     </form>
   </div>
 
-  <!-- Item List with Checkboxes -->
   <div *ngIf="items.length === 0; else showItems" class="text-gray-600">
     There are no wishes to display.
   </div>
