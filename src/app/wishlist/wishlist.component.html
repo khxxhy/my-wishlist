@@ -1,10 +1,10 @@
-<div *ngIf="visibleItems.length === 0; else showItems" class="text-gray-600">
+<div *ngIf="wishes.length === 0; else showItems" class="text-gray-600">
     There are no wishes to display.
   </div>
 
   <ng-template #showItems>
     <div
-      *ngFor="let item of visibleItems; index as ii"
+      *ngFor="let item of wishes; index as ii"
       class="flex items-center space-x-3 p-2"
     >
       <label class="inline-flex items-center space-x-2">
