@@ -1,0 +1,13 @@
+<div class="flex mt-3">
+    <div class="w-1/4">
+      <select 
+        class="block w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        [(ngModel)]="listFilter"
+        (ngModelFilter)="changeFilter($event)"
+      >
+        <option value="0">All</option>
+        <option value="1">Unfulfilled</option>
+        <option value="2">Fulfilled</option>
+      </select>
+    </div>
+  </div>
