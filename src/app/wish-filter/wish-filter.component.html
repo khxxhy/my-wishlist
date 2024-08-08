@@ -3,7 +3,7 @@
       <select 
         class="block w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         [(ngModel)]="listFilter"
-        (ngModelFilter)="changeFilter($event)"
+        (ngModelChange)="changeFilter($event)"
       >
         <option value="0">All</option>
         <option value="1">Unfulfilled</option>
