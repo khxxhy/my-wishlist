@@ -15,11 +15,5 @@ export class AppComponent {
     new WishItem('learn angular')
   ];
 
-  filter: any = () => {};
-
-  get visibleItems(): WishItem[] {
-    return this.items.filter(this.filter);
-  }
-
-
+  filter: any;
 };

@@ -3,19 +3,10 @@
   </div>
 
   <ng-template #showItems>
-    <div
-      *ngFor="let item of wishes; index as ii"
-      class="flex items-center space-x-3 p-2"
-    >
-      <label class="inline-flex items-center space-x-2">
-        <input
-          type="checkbox"
-          [checked]="item.isComplete"
-          [attr.data-index]="ii"
-          (click)="toggleItem(item)"
-          class="form-checkbox h-5 w-5 text-blue-600 rounded"
-        />
-        <span class="text-gray-800">{{ item.wishText }}</span>
-      </label>
-    </div>
+    <wishlist-item
+      *ngFor="let wish of wishes;"
+      [wishText]="wish.wishText"
+      [(fullfilled)]="wish.isComplete"
+    ></wishlist-item>
+    
   </ng-template>
