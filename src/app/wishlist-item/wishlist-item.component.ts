@@ -11,6 +11,10 @@ export class WishlistItemComponent implements OnInit {
   @Input() fullfilled! : boolean;
 
   @Output() fullfilledChange = new EventEmitter<boolean>();
+  get cssClass() {
+   return this.fullfilled ? ['strikeout', 'text-gray-200']: [];
+   //return {'strikeout' : this.fullfilled, 'text-gray-200' : this.fullfilled}
+  }
 
   constructor() { }
 

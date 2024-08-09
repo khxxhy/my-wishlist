@@ -1,7 +1,7 @@
 <div
       class="flex items-center space-x-3 p-2"
     >
-      <label class="inline-flex items-center space-x-2">
+      <label class="inline-flex items-center space-x-2" [ngClass]="cssClass">
         <input
           type="checkbox"
           [checked]="fullfilled"
@@ -10,4 +10,6 @@
         />
         <span class="text-gray-800">{{ wishText }}</span>
       </label>
+      
+      
     </div>
