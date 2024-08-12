@@ -1,0 +1,6 @@
+ [{"WishItem": "get coffee", "isComplete" : "false"},
+ {"WishItem": "shower", "isComplete" : "false"},
+ {"WishItem": "love", "isComplete" : "true"},
+ {"WishItem": "learn angular", "isComplete" : "false"}
+]
+   
