@@ -5,8 +5,7 @@
   <ng-template #showItems>
     <wishlist-item
       *ngFor="let wish of wishes;"
-      [wishText]="wish.wishText"
-      [(fullfilled)]="wish.isComplete"
+      [wish]="wish"
     ></wishlist-item>
     
   </ng-template>

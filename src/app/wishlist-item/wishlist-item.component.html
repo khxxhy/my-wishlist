@@ -1,12 +1,12 @@
-<div class="flex=justify-between items-center space-x-3 p-2">
+<div class="flex=justify-between items-center space-x-3 p-5">
   <label class="inline-flex items-center space-x-2" [ngClass]="cssClass">
     <input
       type="checkbox"
-      [checked]="fullfilled"
+      [checked]="wish.isComplete"
       (click)="toggleFullfilled()"
-      class="form-checkbox h-5 w-5 text-blue-600 rounded"
+      class="form-checkbox h-5 w-5 text-white-600 rounded"
     />
-    <span class="text-gray-800">{{ wishText }}</span>
+    <span class="text-gray-800">{{ wish.wishText }}</span>
   </label>
   <button
     class="w-8 h-8 bg-blue-500 rounded-full hover:bg-gray-200 focus:outline-none"
@@ -14,10 +14,10 @@
     (click)="removeWish()"
   >
     <span
-      class="w-1 h-4 bg-gray-700 transform rotate-45 border border-red-500"
-    ></span>
+      class="w-1 h-4 bg-white-700 transform rotate-45 border border-blue-500"
+    >x</span>
     <span
-      class="w-1 h-4 bg-gray-700 transform -rotate-45 border border-blue-500"
+      class="w-1 h-4 bg-white-700 transform -rotate-45 border border-blue-500"
     ></span>
   </button>
 </div>
