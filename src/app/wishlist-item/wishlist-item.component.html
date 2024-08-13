@@ -1,4 +1,4 @@
-<div class="flex=justify-between items-center space-x-3 p-5">
+<div class="flex=justify-around items-center space-x-3 p-5">
   <label class="inline-flex items-center space-x-2" [ngClass]="cssClass">
     <input
       type="checkbox"
@@ -9,15 +9,15 @@
     <span class="text-gray-800">{{ wish.wishText }}</span>
   </label>
   <button
-    class="w-8 h-8 bg-blue-500 rounded-full hover:bg-gray-200 focus:outline-none"
+    class="w-8 h-8 bg-white-500 rounded-full hover:bg-gray-200 focus:outline-none"
     aria-label="Close"
     (click)="removeWish()"
   >
     <span
-      class="w-1 h-4 bg-white-700 transform rotate-45 border border-blue-500"
+      class="w-1 h-4 bg-white-700 transform rotate-45"
     >x</span>
     <span
-      class="w-1 h-4 bg-white-700 transform -rotate-45 border border-blue-500"
+      class="w-1 h-4 bg-white-700 transform -rotate-45"
     ></span>
   </button>
 </div>
